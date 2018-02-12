@@ -68,3 +68,7 @@ make watch
 `make install` and `make watch` will copy the application bundle to the default Sketch plugins location `~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/` as `Placebryson.sketchplugin`.
 
 See the `Makefile` for further details on the build process.
+
+## Credit
+
+A lot of this code was forked from [Day Player](https://github.com/tylergaw/day-player).
