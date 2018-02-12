@@ -1,0 +1,30 @@
+{
+  "name": "placebryson-sketchapp-plugin",
+  "version": "1.0.0",
+  "description": "A Sketch Plugin for placing Bryson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattdrose/sketch-placebryson.git"
+  },
+  "scripts": {
+    "test": "make lint"
+  },
+  "keywords": [
+    "sketch",
+    "placeholder",
+    "placebryson",
+    "images"
+  ],
+  "author": "Matt Rose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattdrose/sketch-placebryson/issues"
+  },
+  "homepage": "https://github.com/mattdrose/sketch-placebryson#readme",
+  "devDependencies": {
+    "eslint": "3.8.0",
+    "pre-commit": "1.1.3",
+    "prompt": "1.0.0",
+    "watch": "1.0.1"
+  }
+}

@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+- 5.12.0
+sudo: false
+cache:
+  directories:
+  - /home/travis/.local
+  - node_modules
+  - $(npm config get cache)
+before_install:
+- npm config set progress false
+- npm config set spin false
+install:
+- pip install --user -U awscli
+- npm install
+script:
+- make lint
+deploy:
+- provider: script
+  script: make publish
+  on:
+    tags: true
+env:
+  global:
+  - AWS_ACCESS_KEY_ID=AKIAIRFYYXYKNOXEDSUA
+  - secure: lGF/fdhV6Ta+cDYG1xbgca8tKeu/NTN1nizmbJqK0Lt7S29aVfrU/ffKUvHX75OP8kK3GJtUyXOg+ZDM9wYmJmyhmr827ilybwWRsUMLAFTo/rm6VOXojtYmrvcJRPEU+jjDgQ4lmN0cl/MQkxL1t6RnjEZ+70d66DzLhKRIMRGDar1EjTKYJeiSwYOoujGE9lUfLUN591pZD/HjiBRmxRQs+xXh5aN96dcrNuFS9iYNSyGcxJ4gzCKmZwzuBZ8qC6a/yNK+YbcLVp3gD7yb0pSJMOox6pnJbiCjlQoSVRZBOzI2/1SXxqNx+icMCL+eIZNxyebMHeuWTb5I30VGf901ykOIkALJwm/pX2URvrKLZbKeRSbFtSzvgwVKdv+UlKgh7b5CmiUo0LRz5qWwEF0E+xq7l6kt1Ib6+A7ocUbOzGNJW1F0iTLKWOiQocurRRZepHHKQrYJ9H7evPeT8hk735RgiVgAFld2ZL6EBGmGalh36qptNankmgrZ6BiMcbeKJNGOQtdp5Qg4FuHFSbUzKSD3Ev19RsFOm/8I3j/h0IcK6JahNyRACWY1JFY9WqcyCLEKMroeJ2s/Y/XAybGOjU49NZkj0LvK1LmJHz1VoogDhUb8eWVGRGWZH7D2CBZUv2S+laxY/AzG7ihL7O1Q/gwTxhpoUaftuJQbxDM=

@@ -1,0 +1,23 @@
+{
+  "name": "Placebryson",
+  "description": "A Plugin for placing Bryson in your Sketch project.",
+  "author": "Matt Rose",
+  "homepage": "https://github.com/mattdrose/sketch-placebryson",
+  "version": "1.0.0",
+  "identifier": "com.sketchapp.mattdrose.placebryson",
+  "compatibleVersion": "41",
+  "commands" : [
+    {
+      "name": "Add some sass...",
+      "script": "index.cocoascript",
+      "handler": "placebryson",
+      "identifier": "placebryson"
+    }
+  ],
+  "menu": {
+    "title": "Place Bryson",
+    "items": [
+      "placebryson"
+    ]
+  }
+}
