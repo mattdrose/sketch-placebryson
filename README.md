@@ -1,13 +1,17 @@
-# Placebryson Sketch App
+# [Download v1.0.0](https://s3.us-east-2.amazonaws.com/placebryson/releases/placebryson-1.0.0.zip)
 
-## Placebryson Sketch App [![Build Status](https://travis-ci.org/mattdrose/sketch-placebryson.svg)](https://travis-ci.org/mattdrose/sketch-placebryson)
+<img src="https://user-images.githubusercontent.com/1107972/36083815-0e173112-0f85-11e8-9947-bd8c2ee69800.png" alt="Placebryson Sketch Plugin" width="250px" />
+
+## Placebryson Sketch Plugin [![Build Status](https://travis-ci.org/mattdrose/sketch-placebryson.svg)](https://travis-ci.org/mattdrose/sketch-placebryson)
 A Sketch Plugin for placing Bryson where he belongs, in your Sketch project.
+
+![Placebryson Demo](https://user-images.githubusercontent.com/1107972/36083865-946fe600-0f85-11e8-90e5-89d61e3adc0b.gif)
 
 ## Installation
 
-- Download the latest version (1.0.0)
+- [Download the latest version (v1.0.0)](https://s3.us-east-2.amazonaws.com/placebryson/releases/placebryson-1.0.0.zip)
 - Unzip the file
-- Double-click Placebryson.sketchplugin to install
+- Double-click `Placebryson.sketchplugin` to install
 
 ## What Does It Do?
 It allows you to insert customized images of Bryson into any Sketch document.
@@ -69,6 +73,4 @@ make watch
 
 See the `Makefile` for further details on the build process.
 
-## Credit
-
-A lot of this code was forked from [Day Player](https://github.com/tylergaw/day-player).
+#### Plugin inspired by [Day Player](https://github.com/tylergaw/day-player)
